@@ -1,9 +1,14 @@
 package com.ecommerce.orderinventory.controller;
 
 import com.ecommerce.orderinventory.dto.ApiResponse;
+import com.ecommerce.orderinventory.dto.CreateOrderRequest;
+import com.ecommerce.orderinventory.dto.CreateOrderResponse;
 import com.ecommerce.orderinventory.dto.OrderCancellationRequest;
+import com.ecommerce.orderinventory.entity.Orders;
 import com.ecommerce.orderinventory.service.OrderService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import lombok.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,8 +19,14 @@ public class OrderController {
 
     private final OrderService orderService;
 
-    @PostMapping("/cancel")
-    public ResponseEntity<ApiResponse> cancelOrder(@RequestBody OrderCancellationRequest orderCancellationRequest) {
+    @PostMapping("/create")
+    public ResponseEntity<CreateOrderResponse> createOrder(@RequestBody @Valid CreateOrderRequest request) throws Exception {
+        Orders order = orderService.createOrder(request);
+        return ResponseEntity.ok(new CreateOrderResponse(order));
+    }
+
+    @PutMapping("/cancel")
+    public ResponseEntity<ApiResponse> cancelOrder(@RequestBody @Valid OrderCancellationRequest orderCancellationRequest) {
         orderService.cancelOrder(orderCancellationRequest.getOrderId());
         return ResponseEntity.ok(new ApiResponse("Order cancelled successfully"));
     }
