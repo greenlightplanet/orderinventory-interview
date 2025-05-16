@@ -18,6 +18,15 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(new ApiResponse(ex.getMessage()), HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(InventoryServiceException.class)
+    public ResponseEntity<ApiResponse> handleInventories(InsufficientInventoryException ex) {
+        return new ResponseEntity<>(new ApiResponse(ex.getMessage()), HttpStatus.BAD_REQUEST);
+    }
+    @ExceptionHandler(OrderCancellationException.class)
+    public ResponseEntity<ApiResponse> handleCancel(InsufficientInventoryException ex) {
+        return new ResponseEntity<>(new ApiResponse(ex.getMessage()), HttpStatus.BAD_REQUEST);
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApiResponse> handleAll(Exception ex) throws Exception {
         if(!ex.getClass().getName().equals("HttpRequestMethodNotSupportedException")){
