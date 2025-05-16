@@ -1,0 +1,425 @@
+2025-05-16T11:57:19.674+05:30  INFO 15470 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Starting OrderinventoryApplication using Java 17.0.5 with PID 15470 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T11:57:19.676+05:30  INFO 15470 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T11:57:19.975+05:30  INFO 15470 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T11:57:20.003+05:30  INFO 15470 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2025-05-16T11:57:20.246+05:30  INFO 15470 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T11:57:20.253+05:30  INFO 15470 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T11:57:20.253+05:30  INFO 15470 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T11:57:20.291+05:30  INFO 15470 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T11:57:20.292+05:30  INFO 15470 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 596 ms
+2025-05-16T11:57:20.363+05:30  INFO 15470 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T11:57:20.391+05:30  INFO 15470 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T11:57:20.406+05:30  INFO 15470 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T11:57:20.530+05:30  INFO 15470 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T11:57:20.545+05:30  INFO 15470 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T11:57:21.208+05:30  INFO 15470 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@295b07e0
+2025-05-16T11:57:21.212+05:30  INFO 15470 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T11:57:21.374+05:30  INFO 15470 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T11:57:21.746+05:30  INFO 15470 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T11:57:21.870+05:30  INFO 15470 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T11:57:22.034+05:30  WARN 15470 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T11:57:22.184+05:30  INFO 15470 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T11:57:22.189+05:30  INFO 15470 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Started OrderinventoryApplication in 2.732 seconds (process running for 2.93)
+2025-05-16T11:57:28.811+05:30  INFO 15470 --- [orderinventory] [http-nio-8008-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T11:57:28.812+05:30  INFO 15470 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T11:57:28.815+05:30  INFO 15470 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-05-16T11:57:28.882+05:30  INFO 15470 --- [orderinventory] [http-nio-8008-exec-1] c.e.orderinventory.service.OrderService  : Cancelling order with ID = 56
+2025-05-16T11:59:18.524+05:30  INFO 15470 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T11:59:18.534+05:30  INFO 15470 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T11:59:18.541+05:30  INFO 15470 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T11:59:18.547+05:30  INFO 15470 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T11:59:18.716+05:30  INFO 15470 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T11:59:54.573+05:30  INFO 15969 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Starting OrderinventoryApplication using Java 17.0.5 with PID 15969 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T11:59:54.574+05:30  INFO 15969 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T11:59:54.869+05:30  INFO 15969 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T11:59:54.895+05:30  INFO 15969 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2025-05-16T11:59:55.136+05:30  INFO 15969 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T11:59:55.143+05:30  INFO 15969 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T11:59:55.143+05:30  INFO 15969 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T11:59:55.181+05:30  INFO 15969 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T11:59:55.181+05:30  INFO 15969 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 586 ms
+2025-05-16T11:59:55.252+05:30  INFO 15969 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T11:59:55.278+05:30  INFO 15969 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T11:59:55.293+05:30  INFO 15969 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T11:59:55.417+05:30  INFO 15969 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T11:59:55.432+05:30  INFO 15969 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T11:59:56.085+05:30  INFO 15969 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e73974
+2025-05-16T11:59:56.090+05:30  INFO 15969 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T11:59:56.246+05:30  INFO 15969 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T11:59:56.615+05:30  INFO 15969 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T11:59:56.739+05:30  INFO 15969 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T11:59:56.909+05:30  WARN 15969 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T11:59:57.058+05:30  INFO 15969 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T11:59:57.064+05:30  INFO 15969 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Started OrderinventoryApplication in 2.716 seconds (process running for 2.893)
+2025-05-16T12:00:03.317+05:30  INFO 15969 --- [orderinventory] [http-nio-8008-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T12:00:03.318+05:30  INFO 15969 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T12:00:03.319+05:30  INFO 15969 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-05-16T12:00:03.384+05:30  INFO 15969 --- [orderinventory] [http-nio-8008-exec-1] c.e.orderinventory.service.OrderService  : Cancelling order with ID = 56
+2025-05-16T12:55:47.451+05:30 ERROR 15969 --- [orderinventory] [orderinventory-pool connection adder] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Error thrown while acquiring connection from data source
+
+java.sql.SQLSyntaxErrorException: User 'interview' has exceeded the 'max_questions' resource (current value: 500)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1414) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1399) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:404) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:724) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:703) ~[HikariCP-5.1.0.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-05-16T13:06:39.680+05:30  INFO 15969 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T13:06:39.702+05:30  INFO 15969 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T13:06:39.715+05:30  INFO 15969 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T13:06:39.740+05:30  INFO 15969 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T13:06:41.314+05:30  INFO 15969 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T13:42:24.950+05:30  INFO 38854 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Starting OrderinventoryApplication using Java 17.0.5 with PID 38854 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T13:42:24.952+05:30  INFO 38854 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T13:42:25.244+05:30  INFO 38854 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T13:42:25.278+05:30  INFO 38854 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+2025-05-16T13:42:25.523+05:30  INFO 38854 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T13:42:25.539+05:30  INFO 38854 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T13:42:25.539+05:30  INFO 38854 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T13:42:25.573+05:30  INFO 38854 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T13:42:25.573+05:30  INFO 38854 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 601 ms
+2025-05-16T13:42:25.646+05:30  INFO 38854 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T13:42:25.673+05:30  INFO 38854 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T13:42:25.688+05:30  INFO 38854 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T13:42:25.819+05:30  INFO 38854 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T13:42:25.834+05:30  INFO 38854 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T13:42:26.779+05:30  INFO 38854 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@76b305e1
+2025-05-16T13:42:26.780+05:30  INFO 38854 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T13:42:26.940+05:30  INFO 38854 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T13:42:27.317+05:30  INFO 38854 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T13:42:27.445+05:30  INFO 38854 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T13:42:27.606+05:30  WARN 38854 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T13:42:27.753+05:30  INFO 38854 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T13:42:27.759+05:30  INFO 38854 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Started OrderinventoryApplication in 3.039 seconds (process running for 3.254)
+2025-05-16T13:42:34.041+05:30  INFO 38854 --- [orderinventory] [http-nio-8008-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T13:42:34.041+05:30  INFO 38854 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T13:42:34.049+05:30  INFO 38854 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-05-16T13:42:34.126+05:30  INFO 38854 --- [orderinventory] [http-nio-8008-exec-1] c.e.orderinventory.service.OrderService  : Cancelling order with ID = 56
+2025-05-16T13:44:04.343+05:30  INFO 38854 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T13:44:04.356+05:30  INFO 38854 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T13:44:04.365+05:30  INFO 38854 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T13:44:04.374+05:30  INFO 38854 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T13:44:04.539+05:30  INFO 38854 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T13:44:09.294+05:30  INFO 39199 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Starting OrderinventoryApplication using Java 17.0.5 with PID 39199 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T13:44:09.295+05:30  INFO 39199 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T13:44:09.577+05:30  INFO 39199 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T13:44:09.611+05:30  INFO 39199 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2025-05-16T13:44:09.834+05:30  INFO 39199 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T13:44:09.841+05:30  INFO 39199 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T13:44:09.841+05:30  INFO 39199 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T13:44:09.875+05:30  INFO 39199 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T13:44:09.875+05:30  INFO 39199 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 561 ms
+2025-05-16T13:44:09.955+05:30  INFO 39199 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T13:44:09.978+05:30  INFO 39199 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T13:44:09.991+05:30  INFO 39199 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T13:44:10.103+05:30  INFO 39199 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T13:44:10.117+05:30  INFO 39199 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T13:44:10.790+05:30  INFO 39199 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@e07b4db
+2025-05-16T13:44:10.792+05:30  INFO 39199 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T13:44:10.952+05:30  INFO 39199 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T13:44:11.322+05:30  INFO 39199 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T13:44:11.446+05:30  INFO 39199 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T13:44:11.648+05:30  WARN 39199 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T13:44:11.833+05:30  INFO 39199 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T13:44:11.842+05:30  INFO 39199 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Started OrderinventoryApplication in 2.751 seconds (process running for 2.9)
+2025-05-16T13:44:11.844+05:30  INFO 39199 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T13:44:11.847+05:30  INFO 39199 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T13:44:11.851+05:30  INFO 39199 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T13:44:11.854+05:30  INFO 39199 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T13:44:12.027+05:30  INFO 39199 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T15:47:30.439+05:30  INFO 59480 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Starting OrderinventoryApplication using Java 17.0.5 with PID 59480 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T15:47:30.441+05:30  INFO 59480 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T15:47:30.755+05:30  INFO 59480 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T15:47:30.784+05:30  INFO 59480 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2025-05-16T15:47:31.045+05:30  INFO 59480 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T15:47:31.053+05:30  INFO 59480 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T15:47:31.053+05:30  INFO 59480 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T15:47:31.088+05:30  INFO 59480 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T15:47:31.088+05:30  INFO 59480 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 621 ms
+2025-05-16T15:47:31.177+05:30  INFO 59480 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T15:47:31.204+05:30  INFO 59480 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T15:47:31.219+05:30  INFO 59480 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T15:47:31.345+05:30  INFO 59480 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T15:47:31.364+05:30  INFO 59480 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T15:47:32.281+05:30  INFO 59480 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@53dba9cd
+2025-05-16T15:47:32.281+05:30  INFO 59480 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T15:47:32.429+05:30  INFO 59480 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T15:47:32.809+05:30  INFO 59480 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T15:47:32.935+05:30  INFO 59480 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:47:33.106+05:30  WARN 59480 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T15:47:33.267+05:30  INFO 59480 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T15:47:33.273+05:30  INFO 59480 --- [orderinventory] [main] c.e.o.OrderinventoryApplication          : Started OrderinventoryApplication in 3.077 seconds (process running for 3.403)
+2025-05-16T15:48:00.200+05:30  INFO 59480 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T15:48:00.217+05:30  INFO 59480 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T15:48:00.223+05:30  INFO 59480 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:48:00.227+05:30  INFO 59480 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T15:48:00.406+05:30  INFO 59480 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T15:48:02.814+05:30  INFO 59587 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Starting OrderInventoryApplication using Java 17.0.5 with PID 59587 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T15:48:02.815+05:30  INFO 59587 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T15:48:03.107+05:30  INFO 59587 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T15:48:03.135+05:30  INFO 59587 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2025-05-16T15:48:03.376+05:30  INFO 59587 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T15:48:03.382+05:30  INFO 59587 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T15:48:03.382+05:30  INFO 59587 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T15:48:03.421+05:30  INFO 59587 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T15:48:03.421+05:30  INFO 59587 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 587 ms
+2025-05-16T15:48:03.491+05:30  INFO 59587 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T15:48:03.513+05:30  INFO 59587 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T15:48:03.526+05:30  INFO 59587 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T15:48:03.648+05:30  INFO 59587 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T15:48:03.671+05:30  INFO 59587 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T15:48:04.809+05:30  INFO 59587 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@17c53dfb
+2025-05-16T15:48:04.813+05:30  INFO 59587 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T15:48:04.997+05:30  INFO 59587 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T15:48:05.405+05:30  INFO 59587 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T15:48:05.631+05:30  INFO 59587 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:48:05.980+05:30  WARN 59587 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T15:48:06.152+05:30  INFO 59587 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T15:48:06.158+05:30  INFO 59587 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Started OrderInventoryApplication in 3.598 seconds (process running for 3.871)
+2025-05-16T15:48:56.043+05:30  INFO 59587 --- [orderinventory] [http-nio-8008-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T15:48:56.044+05:30  INFO 59587 --- [orderinventory] [http-nio-8008-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T15:48:56.049+05:30  INFO 59587 --- [orderinventory] [http-nio-8008-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-05-16T15:49:44.208+05:30  INFO 59587 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T15:49:44.221+05:30  INFO 59587 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T15:49:44.230+05:30  INFO 59587 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:49:44.242+05:30  INFO 59587 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T15:49:44.417+05:30  INFO 59587 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T15:50:05.481+05:30  INFO 59996 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Starting OrderInventoryApplication using Java 17.0.5 with PID 59996 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T15:50:05.482+05:30  INFO 59996 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T15:50:05.798+05:30  INFO 59996 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T15:50:05.839+05:30  INFO 59996 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2025-05-16T15:50:06.104+05:30  INFO 59996 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T15:50:06.112+05:30  INFO 59996 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T15:50:06.112+05:30  INFO 59996 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T15:50:06.154+05:30  INFO 59996 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T15:50:06.155+05:30  INFO 59996 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 649 ms
+2025-05-16T15:50:06.232+05:30  INFO 59996 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T15:50:06.260+05:30  INFO 59996 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T15:50:06.276+05:30  INFO 59996 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T15:50:06.401+05:30  INFO 59996 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T15:50:06.418+05:30  INFO 59996 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T15:50:07.072+05:30  INFO 59996 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@44eb2452
+2025-05-16T15:50:07.075+05:30  INFO 59996 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T15:50:07.226+05:30  INFO 59996 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T15:50:07.599+05:30  INFO 59996 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T15:50:07.716+05:30  INFO 59996 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:50:07.889+05:30  WARN 59996 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T15:50:08.047+05:30  INFO 59996 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T15:50:08.054+05:30  INFO 59996 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Started OrderInventoryApplication in 2.804 seconds (process running for 2.999)
+2025-05-16T15:50:13.262+05:30  INFO 59996 --- [orderinventory] [http-nio-8008-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T15:50:13.263+05:30  INFO 59996 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T15:50:13.268+05:30  INFO 59996 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+
+
+2025-05-16T15:51:10.986+05:30  INFO 59996 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T15:51:10.995+05:30  INFO 59996 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T15:51:11.000+05:30  INFO 59996 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:51:11.007+05:30  INFO 59996 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T15:51:11.194+05:30  INFO 59996 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T15:51:13.571+05:30  INFO 60219 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Starting OrderInventoryApplication using Java 17.0.5 with PID 60219 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T15:51:13.572+05:30  INFO 60219 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T15:51:13.850+05:30  INFO 60219 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T15:51:13.883+05:30  INFO 60219 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2025-05-16T15:51:14.123+05:30  INFO 60219 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T15:51:14.129+05:30  INFO 60219 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T15:51:14.130+05:30  INFO 60219 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T15:51:14.161+05:30  INFO 60219 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T15:51:14.162+05:30  INFO 60219 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 570 ms
+2025-05-16T15:51:14.236+05:30  INFO 60219 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T15:51:14.259+05:30  INFO 60219 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T15:51:14.272+05:30  INFO 60219 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T15:51:14.393+05:30  INFO 60219 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T15:51:14.407+05:30  INFO 60219 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T15:51:15.011+05:30  INFO 60219 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2086d469
+2025-05-16T15:51:15.014+05:30  INFO 60219 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T15:51:15.160+05:30  INFO 60219 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T15:51:15.525+05:30  INFO 60219 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T15:51:15.638+05:30  INFO 60219 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:51:15.801+05:30  WARN 60219 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T15:51:15.956+05:30  INFO 60219 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T15:51:15.961+05:30  INFO 60219 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Started OrderInventoryApplication in 2.593 seconds (process running for 2.749)
+2025-05-16T15:51:25.169+05:30  INFO 60219 --- [orderinventory] [http-nio-8008-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T15:51:25.170+05:30  INFO 60219 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T15:51:25.172+05:30  INFO 60219 --- [orderinventory] [http-nio-8008-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-16T15:51:59.352+05:30  INFO 60219 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T15:51:59.366+05:30  INFO 60219 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T15:51:59.372+05:30  INFO 60219 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:51:59.386+05:30  INFO 60219 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T15:51:59.556+05:30  INFO 60219 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T15:52:01.930+05:30  INFO 60376 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Starting OrderInventoryApplication using Java 17.0.5 with PID 60376 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T15:52:01.932+05:30  INFO 60376 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T15:52:02.226+05:30  INFO 60376 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T15:52:02.253+05:30  INFO 60376 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2025-05-16T15:52:02.483+05:30  INFO 60376 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T15:52:02.498+05:30  INFO 60376 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T15:52:02.498+05:30  INFO 60376 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T15:52:02.522+05:30  INFO 60376 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T15:52:02.522+05:30  INFO 60376 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 569 ms
+2025-05-16T15:52:02.589+05:30  INFO 60376 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T15:52:02.621+05:30  INFO 60376 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T15:52:02.638+05:30  INFO 60376 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T15:52:02.763+05:30  INFO 60376 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T15:52:02.778+05:30  INFO 60376 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T15:52:04.211+05:30  INFO 60376 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dcf7b6a
+2025-05-16T15:52:04.213+05:30  INFO 60376 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T15:52:04.423+05:30  INFO 60376 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T15:52:04.824+05:30  INFO 60376 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T15:52:05.123+05:30  INFO 60376 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:52:05.337+05:30  WARN 60376 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T15:52:05.492+05:30  INFO 60376 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T15:52:05.498+05:30  INFO 60376 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Started OrderInventoryApplication in 3.784 seconds (process running for 3.936)
+2025-05-16T15:52:13.704+05:30  INFO 60376 --- [orderinventory] [http-nio-8008-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T15:52:13.705+05:30  INFO 60376 --- [orderinventory] [http-nio-8008-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T15:52:13.708+05:30  INFO 60376 --- [orderinventory] [http-nio-8008-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-05-16T15:52:59.670+05:30  INFO 60376 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T15:52:59.682+05:30  INFO 60376 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T15:52:59.690+05:30  INFO 60376 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:52:59.701+05:30  INFO 60376 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T15:52:59.894+05:30  INFO 60376 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T15:53:00.952+05:30  INFO 60570 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Starting OrderInventoryApplication using Java 17.0.5 with PID 60570 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T15:53:00.954+05:30  INFO 60570 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T15:53:01.240+05:30  INFO 60570 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T15:53:01.276+05:30  INFO 60570 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2025-05-16T15:53:01.508+05:30  INFO 60570 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T15:53:01.523+05:30  INFO 60570 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T15:53:01.523+05:30  INFO 60570 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T15:53:01.554+05:30  INFO 60570 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T15:53:01.554+05:30  INFO 60570 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 582 ms
+2025-05-16T15:53:01.621+05:30  INFO 60570 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T15:53:01.642+05:30  INFO 60570 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T15:53:01.655+05:30  INFO 60570 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T15:53:01.767+05:30  INFO 60570 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T15:53:01.782+05:30  INFO 60570 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T15:53:02.480+05:30  INFO 60570 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b126187
+2025-05-16T15:53:02.483+05:30  INFO 60570 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T15:53:02.651+05:30  INFO 60570 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T15:53:03.015+05:30  INFO 60570 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T15:53:03.148+05:30  INFO 60570 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:53:03.309+05:30  WARN 60570 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T15:53:03.457+05:30  INFO 60570 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T15:53:03.462+05:30  INFO 60570 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Started OrderInventoryApplication in 2.722 seconds (process running for 2.87)
+2025-05-16T15:53:22.497+05:30  INFO 60570 --- [orderinventory] [http-nio-8008-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T15:53:22.498+05:30  INFO 60570 --- [orderinventory] [http-nio-8008-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T15:53:22.501+05:30  INFO 60570 --- [orderinventory] [http-nio-8008-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-05-16T15:54:41.920+05:30  INFO 60570 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T15:54:41.927+05:30  INFO 60570 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T15:54:41.933+05:30  INFO 60570 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:54:41.939+05:30  INFO 60570 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T15:54:42.144+05:30  INFO 60570 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
+2025-05-16T15:54:43.201+05:30  INFO 60917 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Starting OrderInventoryApplication using Java 17.0.5 with PID 60917 (/Users/nishantbharat/Downloads/orderinventory/build/classes/java/main started by nishantbharat in /Users/nishantbharat/Downloads/orderinventory)
+2025-05-16T15:54:43.202+05:30  INFO 60917 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-05-16T15:54:43.497+05:30  INFO 60917 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-16T15:54:43.526+05:30  INFO 60917 --- [orderinventory] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2025-05-16T15:54:43.769+05:30  INFO 60917 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8008 (http)
+2025-05-16T15:54:43.777+05:30  INFO 60917 --- [orderinventory] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-16T15:54:43.777+05:30  INFO 60917 --- [orderinventory] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-16T15:54:43.817+05:30  INFO 60917 --- [orderinventory] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-16T15:54:43.818+05:30  INFO 60917 --- [orderinventory] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 595 ms
+2025-05-16T15:54:43.892+05:30  INFO 60917 --- [orderinventory] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-16T15:54:43.919+05:30  INFO 60917 --- [orderinventory] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-16T15:54:43.935+05:30  INFO 60917 --- [orderinventory] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-16T15:54:44.060+05:30  INFO 60917 --- [orderinventory] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-16T15:54:44.076+05:30  INFO 60917 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Starting...
+2025-05-16T15:54:44.805+05:30  INFO 60917 --- [orderinventory] [main] com.zaxxer.hikari.pool.HikariPool        : orderinventory-pool - Added connection com.mysql.cj.jdbc.ConnectionImpl@e07b4db
+2025-05-16T15:54:44.807+05:30  INFO 60917 --- [orderinventory] [main] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Start completed.
+2025-05-16T15:54:44.983+05:30  INFO 60917 --- [orderinventory] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (orderinventory-pool)']
+	Database driver: undefined/unknown
+	Database version: 8.4.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-16T15:54:45.404+05:30  INFO 60917 --- [orderinventory] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-16T15:54:45.539+05:30  INFO 60917 --- [orderinventory] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:54:45.717+05:30  WARN 60917 --- [orderinventory] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-16T15:54:45.883+05:30  INFO 60917 --- [orderinventory] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8008 (http) with context path '/'
+2025-05-16T15:54:45.889+05:30  INFO 60917 --- [orderinventory] [main] c.e.o.OrderInventoryApplication          : Started OrderInventoryApplication in 2.917 seconds (process running for 3.125)
+2025-05-16T15:54:51.787+05:30  INFO 60917 --- [orderinventory] [http-nio-8008-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-16T15:54:51.787+05:30  INFO 60917 --- [orderinventory] [http-nio-8008-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-16T15:54:51.791+05:30  INFO 60917 --- [orderinventory] [http-nio-8008-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-05-16T15:54:51.814+05:30  WARN 60917 --- [orderinventory] [http-nio-8008-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-05-16T15:55:07.028+05:30  INFO 60917 --- [orderinventory] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-16T15:55:07.038+05:30  INFO 60917 --- [orderinventory] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-16T15:55:07.043+05:30  INFO 60917 --- [orderinventory] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-16T15:55:07.051+05:30  INFO 60917 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown initiated...
+2025-05-16T15:55:07.244+05:30  INFO 60917 --- [orderinventory] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : orderinventory-pool - Shutdown completed.
