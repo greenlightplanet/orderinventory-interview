@@ -36,4 +36,4 @@ out/
 ### VS Code ###
 .vscode/
 
-orderinventory/order_inventory_log.log
+order_inventory_log.log
